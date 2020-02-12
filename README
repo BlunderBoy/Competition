@@ -1,0 +1,25 @@
+//Macarie Razvan Cristian, 322CB
+	Pentru cerinta 1 am pornit de la o clasa Team, care este abstracta si care
+este mostenita de cele 3 tipuri diferite de echipa. Clasa implementeaza 
+factory pentru crearea unui tip de echipa de aceea definesc stringul teamType. 
+
+Echipele sunt toate salvate intr-un Databse. Clasa database este un singleton 
+pe care il pot accesa global prin getInstance. In acel singleton am pus si 
+obiectele folosite la scriere si la citire, lucru foarte folositor mai ales 
+cand am afisari si citiri in mai multe clase. Pentru a printa dupa format 
+fiecare echipa am suprascris toString la Player si la Team.
+
+	Pentru cerinta 2 am pornit de la o clasa numita competitie in care se
+desfasoara tot. Initial se incarca databaseul apoi se adauga echipele, intai 
+in ordinea adaugarii intr-un ArrayList apoi in alt ArrayList ce reprezinta de 
+fapt clasamentul propriu-zis in care se tin echipele in ordinea scorului. 
+Folosind visitor calculez punctajul fiecarei echipe. Dupa ce calculez 
+punctajul fac fiecare echipa sa joaca cu fiecare echipa. Dupa meciuri, se 
+sorteaza clasamentul dupa numarul de puncte castigate in cadrul competitiei
+si prin observer se actualizeaza pozitia in clasament pentru fiecare echipa.
+
+
+	Am incercat in implementare sa fac cat mai multe metode scurte care se 
+folosesc de alte metode pentru a face implementarea mai usoara. Javadoc-ul 
+pentru fiecare clasa este in mare parte auto-generat si apoi modificat unde este 
+cazul.
